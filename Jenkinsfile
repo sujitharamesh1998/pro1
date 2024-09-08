@@ -12,5 +12,6 @@ node{
     stage (" create image"){
         echo " docker image is creating"
         sh " docker build -t project ."
-        echo " image is created"
+        echo " image is created"  
+       }
 }
