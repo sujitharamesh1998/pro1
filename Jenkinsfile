@@ -14,4 +14,10 @@ node{
         sh " docker build -t project ."
         echo " image is created"  
        }
+    stage (" docker login")
+        echo " docker login "
+        withCredentials([string(credentialsId: 'dockerhubpass', variable: 'dockerhub')]) {
+        sh " docker login -u sujitha202301 -p ${dockerhub}"
+        }
+        }
 }
