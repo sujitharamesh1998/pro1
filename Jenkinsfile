@@ -7,5 +7,6 @@ node{
     stage (" build "){
         echo "maven build started"
         sh "mvn clean package"
-        echo " maven build is completed"
+        echo " maven build is completed" 
+       }
 }
