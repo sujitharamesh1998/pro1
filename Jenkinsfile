@@ -9,4 +9,8 @@ node{
         sh "mvn clean package"
         echo " maven build is completed" 
        }
+    stage (" create image"){
+        echo " docker image is creating"
+        sh " docker build -t project ."
+        echo " image is created"
 }
